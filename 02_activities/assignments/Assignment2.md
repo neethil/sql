@@ -62,7 +62,7 @@ Type 1 architecture stores the most updated address, that is, it will overwrite 
     Whereas, type 2 architecture retains history of all addresses entered by customer. Whenever the address updates,
 it is stored as the active or current address, keeping a history of all previous addresses used by a customer along with the start and end dates of those addresses. The end date of a currrently active address is NULL.
 
-
+```
 ***
 
 ## Section 2:
