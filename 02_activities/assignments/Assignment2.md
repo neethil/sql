@@ -45,8 +45,12 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
+![alt text](sql_assign2part1_erd1.jpg)
+
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+![alt text](sql_assign2part1erd2.jpg)
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
@@ -54,8 +58,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
-```
+Type 1 architecture stores the most updated address, that is, it will overwrite the previous address and retain only the newly updated address. One address is kept per customer overwriting any historical data.
+    Whereas, type 2 architecture retains history of all addresses entered by customer. Whenever the address updates,
+it is stored as the active or current address, keeping a history of all previous addresses used by a customer along with the start and end dates of those addresses. The end date of a currrently active address is NULL.
+
 
 ***
 
